@@ -16,3 +16,23 @@ li {
 .isError {
     background-color: normal;
 }
+
+#Celsius_to_fahrenheit {
+    float: left;
+    margin-left: 5%;
+}
+
+#Fahrenheit_to_celsius {
+    float: right;
+    margin-right: 10%;
+}
+
+#fToCBox {
+    float: right;
+    margin-right: 10%;
+}
+
+#cToFBox {
+    float: left;
+    margin-left: 5%;
+}
