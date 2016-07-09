@@ -2,11 +2,15 @@
 <html>
     <head>
         <title>Factorials!</title>
-        <script type="text/javascript" src="Main_js.js"></script>
+        <script type="text/javascript" src="Factorials.js"></script>
+        <link rel="stylesheet" href="Style.css" type="text/css"/>
     </head>
     <body>
         <a href="main_html.html">Back</a>
         <br/>
-        <input type="text" name="Factorial input" onkeypress="calculateFactorial()">
+        <input type="text" id="inputBox" onkeypress="calculateFactorial()">
+        <p id="errorMessenger"></p>
+        <ul id="factorialResultList">
+        </ul>
     </body>
 </html>

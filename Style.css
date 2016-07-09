@@ -1,0 +1,18 @@
+/*css file*/
+
+li {
+    margin: 15px 0 10px 0;
+}
+
+.RemoveButton {
+    float: right;
+    margin-right: 25%;
+}
+
+.anotherError {
+    background-color: yellow;
+}
+
+.isError {
+    background-color: normal;
+}
