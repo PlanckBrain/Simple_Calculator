@@ -8,12 +8,17 @@
     <body>
         <a href="main_html.html">Back</a>
         <br/>
-        <p float="left" margin-left ="5%" class="cToF">Celsius to fahrenheit</p>
-        <p float="right" margin-right="10%" class="FToC">Fahrenheit to celsius</p>
-        <input type="text" id="cToFBox" class="cToF">
-        <input type="text" id="fToCBox" class="FToC">
-        <ul id="Celsius_to_fahrenheit" class="cToF"></ul>
-        <ul id="Fahrenheit_to_celsius" class="fToC"></ul>
+        <p class="cToF">Celsius to Fahrenheit</p>
+        <p class="fToC">Fahrenheit to Celsius</p>
+        <br/>
+        <br/>
+        <br/>
+        <input type="text" id="cToFBox" class="iCToF" onkeypress="CelsiusToFahrenheit()">
+        <input type="text" id="fToCBox" class="iFToC" onkeypress="FahrenheitToCelsius()">
+        <p id="ErrorMessenger"></p>
+        <!--class="fToC" id="fToCErrorMessenger"></p -->
+        <ul id="CToFList" class="cToFL"></ul>
+        <ul id="FToCList" class="fToCL"></ul>
         
     </body>
 </html>

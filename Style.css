@@ -9,6 +9,11 @@ li {
     margin-right: 25%;
 }
 
+.ConversionRemoveButton {
+    float: right;
+    margin-left: 10px;
+}
+
 .anotherError {
     background-color: yellow;
 }
@@ -17,22 +22,31 @@ li {
     background-color: normal;
 }
 
-#Celsius_to_fahrenheit {
+.iCToF {
+    float: left;
+    margin-left: 2%;
+}
+
+.iFToC {
+    float: right;
+    margin-right: 5%;
+}
+
+.cToF {
     float: left;
     margin-left: 5%;
 }
 
-#Fahrenheit_to_celsius {
+.fToC {
     float: right;
     margin-right: 10%;
 }
 
-#fToCBox {
+.fToCL {
     float: right;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
-#cToFBox {
+.cToFL {
     float: left;
-    margin-left: 5%;
 }

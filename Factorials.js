@@ -1,7 +1,6 @@
 // JavaScript File
 
 const returnKeycode = 13;
-//var FactorailInitialized = false;
 
 function calculateFactorial()
 {
