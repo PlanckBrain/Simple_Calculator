@@ -42,8 +42,7 @@ function CelsiusToFahrenheit()
         removeButton.innerHTML = "Remove";
         removeButton.className = "ConversionRemoveButton";
         
-        let fahrenheit;
-        fahrenheit = (celsius/(5/9))+32;
+        let fahrenheit = getFahrenheit(celsius);
         
         newItem.innerHTML = celsius.toFixed(1) + " Celsius is " +
                 fahrenheit.toFixed(1) + " Fahrenheit.  ";
@@ -96,8 +95,7 @@ function FahrenheitToCelsius()
         removeButton.innerHTML = "Remove";
         removeButton.className = "ConversionRemoveButton";
         
-        let celsius;
-        celsius = (fahrenheit-32)*(5/9);
+        var celsius = getCelcius(fahrenheit)
         
         newItem.innerHTML = fahrenheit.toFixed(1) + " Fahrenheit is " +
                 celsius.toFixed(1) + " Celsius.  ";
@@ -109,4 +107,14 @@ function FahrenheitToCelsius()
         inputBox.value = "";
     }
     
+}
+
+function getCelcius(fahrenheit)
+{
+    return (fahrenheit-32)*(5/9);
+}
+
+function getFahrenheit(celsius)
+{
+    return (celsius/(5/9))+32;
 }
