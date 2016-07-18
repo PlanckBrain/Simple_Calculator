@@ -106,7 +106,6 @@ function FahrenheitToCelsius()
 
         inputBox.value = "";
     }
-    
 }
 
 function getCelcius(fahrenheit)
