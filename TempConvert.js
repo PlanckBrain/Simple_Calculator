@@ -1,10 +1,13 @@
 // JavaScript File
 
-const returnKeycode = 13;
+const WAIT_TIME = 850;
+const RETURN_KEY_CODE = 13;
+const PRECISION =1;
+const degree = "\xB0";
 
 function CelsiusToFahrenheit() 
 {
-    if(event.keycode == returnKeycode || event.which == returnKeycode)
+    if(event.keycode == RETURN_KEY_CODE || event.which == RETURN_KEY_CODE)
     {
         let inputBox = document.getElementById("cToFBox");
         let errorMessenger = document.getElementById("ErrorMessenger");
@@ -19,7 +22,7 @@ function CelsiusToFahrenheit()
                 errorMessenger.className = "anotherError";
                 setTimeout(function(){
                     errorMessenger.className = "isError";
-                }, 850);
+                }, WAIT_TIME);
 
             }
             else
@@ -44,8 +47,8 @@ function CelsiusToFahrenheit()
         
         let fahrenheit = getFahrenheit(celsius);
         
-        newItem.innerHTML = celsius.toFixed(1) + " Celsius is " +
-                fahrenheit.toFixed(1) + " Fahrenheit.  ";
+        newItem.innerHTML = celsius.toFixed(PRECISION) + degree + " Celsius is " +
+                fahrenheit.toFixed(PRECISION) + degree + " Fahrenheit.  ";
         newItem.appendChild(removeButton);
         conversionResultList.appendChild(newItem);
         
@@ -58,7 +61,7 @@ function CelsiusToFahrenheit()
 
 function FahrenheitToCelsius()
 {
-    if(event.keycode == returnKeycode || event.which == returnKeycode)
+    if(event.keycode == RETURN_KEY_CODE || event.which == RETURN_KEY_CODE)
     {
         let inputBox = document.getElementById("fToCBox");
         let errorMessenger = document.getElementById("ErrorMessenger");
@@ -73,7 +76,7 @@ function FahrenheitToCelsius()
                 errorMessenger.className = "anotherError";
                 setTimeout(function(){
                     errorMessenger.className = "isError";
-                }, 850);
+                }, WAIT_TIME);
 
             }
             else
@@ -97,8 +100,8 @@ function FahrenheitToCelsius()
         
         var celsius = getCelcius(fahrenheit)
         
-        newItem.innerHTML = fahrenheit.toFixed(1) + " Fahrenheit is " +
-                celsius.toFixed(1) + " Celsius.  ";
+        newItem.innerHTML = fahrenheit.toFixed(PRECISION) + degree + " Fahrenheit is " +
+                celsius.toFixed(PRECISION) + degree + " Celsius.  ";
         newItem.appendChild(removeButton);
         conversionResultList.appendChild(newItem);
         

@@ -4,14 +4,14 @@ li {
     margin: 15px 0 10px 0;
 }
 
-.RemoveButton {
+.RemoveButton { /*Factorials*/
     float: right;
     margin-right: 25%;
 }
 
-.ConversionRemoveButton {
+.ConversionRemoveButton { /*TempConvert*/
     float: right;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .anotherError {
@@ -24,29 +24,25 @@ li {
 
 .iCToF {
     float: left;
-    margin-left: 2%;
+    margin-left: 30px;
 }
 
 .iFToC {
     float: right;
-    margin-right: 5%;
+    margin-right: 30px;
 }
 
-.cToF {
-    float: left;
-    margin-left: 5%;
-}
-
-.fToC {
-    float: right;
-    margin-right: 10%;
-}
 
 .fToCL {
     float: right;
-    margin-right: 5%;
+    margin-right: 30px;
 }
 
 .cToFL {
     float: left;
+    margin-left: 30px;
+}
+
+#ErrorMessenger {
+    text-align: center;
 }
