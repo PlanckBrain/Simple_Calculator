@@ -6,20 +6,20 @@
         <link rel="stylesheet" href="Style.css" type="text/css"/>
     </head>
     <body>
-        <a href="main_html.html">Back</a>
-        <br/>
-        <div id="masterFlex">
-            <div id="leftFlex">
-            <p class="iCToF">Celsius to Fahrenheit</p>
-            <p class="iFToC">Fahrenheit to Celsius</p>
+        <div id="masterDiv">
+            <a href="main_html.html">Back</a>
+            <br/>
+            <p class="cToF">Celsius to Fahrenheit</p>
+            <p class="fToC">Fahrenheit to Celsius</p>
             <br/>
             <br/>
             <br/>
-            <input type="text" id="cToFBox" class="iCToF" onkeypress="CelsiusToFahrenheit()">
-            <input type="text" id="fToCBox" class="iFToC" onkeypress="FahrenheitToCelsius()">
+            <input type="text" id="cToFBox" class="cToF" onkeypress="CelsiusToFahrenheit()">
+            <input type="text" id="fToCBox" class="fToC" onkeypress="FahrenheitToCelsius()">
             <p id="ErrorMessenger"></p>
-            <ul id="CToFList" class="cToFL"></ul>
-            <ul id="FToCList" class="fToCL"></ul>
+            <br/>
+            <ul id="CToFList" class="cToF"></ul>
+            <ul id="FToCList" class="fToC"></ul>
         </div>
     </body>
 </html>

@@ -98,7 +98,7 @@ function FahrenheitToCelsius()
         removeButton.innerHTML = "Remove";
         removeButton.className = "ConversionRemoveButton";
         
-        var celsius = getCelcius(fahrenheit)
+        var celsius = getCelcius(fahrenheit);
         
         newItem.innerHTML = fahrenheit.toFixed(PRECISION) + degree + " Fahrenheit is " +
                 celsius.toFixed(PRECISION) + degree + " Celsius.  ";
