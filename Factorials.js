@@ -1,6 +1,7 @@
 // JavaScript File
 
 const returnKeycode = 13;
+const WAIT_TIME = 850;
 
 function calculateFactorial()
 {
@@ -12,14 +13,14 @@ function calculateFactorial()
         let num = parseFloat(inputBox.value);
         let intNum = parseInt(num, 10);
         
-        if(isNaN(num) || (num-intNum != 0) || num<0)
+        if((num-intNum != 0) || num<0)
         {
             if (errorMessenger.className == "isError")
             {
                 errorMessenger.className = "anotherError";
                 setTimeout(function(){
                     errorMessenger.className = "isError";
-                }, 850);
+                }, WAIT_TIME);
 
             }
             else

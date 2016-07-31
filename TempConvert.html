@@ -3,6 +3,7 @@
     <head>
         <title>Temperature converter</title>
         <script type="text/javascript" src="TempConvert.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <link rel="stylesheet" href="Style.css" type="text/css"/>
     </head>
     <body>
@@ -14,8 +15,8 @@
             <br/>
             <br/>
             <br/>
-            <input type="text" id="cToFBox" class="cToF" onkeypress="CelsiusToFahrenheit()">
-            <input type="text" id="fToCBox" class="fToC" onkeypress="FahrenheitToCelsius()">
+            <input type="number" id="cToFBox" class="cToF" onkeypress="CelsiusToFahrenheit()">
+            <input type="number" id="fToCBox" class="fToC" onkeypress="FahrenheitToCelsius()">
             <p id="ErrorMessenger"></p>
             <br/>
             <ul id="CToFList" class="cToF"></ul>

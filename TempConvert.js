@@ -4,6 +4,8 @@ const WAIT_TIME = 850;
 const RETURN_KEY_CODE = 13;
 const PRECISION =1;
 const degree = "\xB0";
+const absoluteZeroC = -273.15;
+const absoluteZeroF = -459.67;
 
 function CelsiusToFahrenheit() 
 {
@@ -13,9 +15,8 @@ function CelsiusToFahrenheit()
         let errorMessenger = document.getElementById("ErrorMessenger");
         
         let celsius = parseFloat(inputBox.value);
-        //let intNum = parseInt(num, 10);
         
-        if(isNaN(celsius))
+        if(celsius <= absoluteZeroC)
         {
             if (errorMessenger.className == "isError")
             {
@@ -27,7 +28,7 @@ function CelsiusToFahrenheit()
             }
             else
             {
-                errorMessenger.innerHTML  = "Enter a number";
+                errorMessenger.innerHTML  = "That low of temperature is not possible.";
                 errorMessenger.className = "isError";
             }
             
@@ -69,7 +70,7 @@ function FahrenheitToCelsius()
         let fahrenheit = parseFloat(inputBox.value);
         //let intNum = parseInt(num, 10);
         
-        if(isNaN(fahrenheit))
+        if(fahrenheit <= absoluteZeroF)
         {
             if (errorMessenger.className == "isError")
             {
@@ -81,7 +82,7 @@ function FahrenheitToCelsius()
             }
             else
             {
-                errorMessenger.innerHTML  = "Enter a number";
+                errorMessenger.innerHTML  = "That low of temperature is not possible.";
                 errorMessenger.className = "isError";
             }
             
